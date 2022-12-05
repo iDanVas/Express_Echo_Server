@@ -37,7 +37,6 @@ app.post("/post", (req, res) => {
     res.status(200).json(req.body?.name + req.body?.age);
 })
 
-// '/search?food=burger&town=ashdod'
 app.use("*", (req,res) => {
     res.status(404).send("Page not found")
 })
